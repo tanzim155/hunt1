@@ -1,0 +1,794 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 0.8;
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 0.8;
+}
+/*============= Navbar Part Goes Here ==============*/
+.navbar {
+    padding:0;
+    margin: 0;
+    border-bottom: 1px solid #473813;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.navbar-brand {
+    padding: 0;
+    line-height: 110px;
+}
+.navbar-expand-lg .navbar-nav .nav-item{
+    padding-left: 30px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-link::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #fec600;
+    bottom: -36px;
+    left: 0;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #fec600;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+    opacity: 1;
+}
+/*============= Banner Part Goes Here ==============*/
+.slider-item {
+    background-position:center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    height: 100vh;
+    position: relative;
+}
+.slider-item::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.7);
+}
+.slider-text {
+    height: 100vh;
+    position: relative;
+    z-index: 99;
+}
+.content h3 {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.content h1 {
+    color: #fec600;
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 24px;
+}
+.content p {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 545px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+.content a {
+    color: #222;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding:20px;
+    background-color: #fec600;
+    text-transform: uppercase;
+    margin:0 10px;
+    border: 1px solid #fec600;
+    transition: all linear .3s;
+}
+.content a:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.content a.btn2 {
+    padding:20px 34px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.content a.btn2:hover {
+    border-color: #fec600;
+    background-color: #fec600;
+    color: #222;
+}
+#banner {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+}
+#banner i {
+    width: 34px;
+    height:34px;
+    color: #222;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 34px;
+    text-align: center;
+    font-size: 22px;
+    transition:  all linear .3s;
+    cursor: pointer;
+}
+#banner i:hover {
+    background:#fec600;
+}
+#banner .left{
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+#banner .right{
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+/*============= about Part Goes Here ==============*/
+.headline {
+    padding-bottom: 60px;
+}
+.headline h2 {
+    font-size: 35px;
+    color: #111;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.headline p {
+    font-size: 14px;
+    color: #353535;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 22px;
+    padding-top: 16px;
+}
+.about-item1 {
+    margin-bottom: 65px;
+    
+}
+.about-item1, .about-item2, .about-item3, .about-item4 {
+    background-color: #eeeeee;
+    padding:40px 52px 45px 52px; 
+    position: relative;
+   
+}
+.about-item1::after {
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #eeeeee;
+    bottom: -19px;
+    left: 50%;
+    transform: translateX(-50%)rotate(45deg);
+}
+.about-item2::after {
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #eeeeee;
+    right: -19px;
+    top: 50%;
+    transform: translateY(-50%)rotate(45deg);
+}
+.about-item3::after {
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #eeeeee;
+    left: -19px;
+    top: 50%;
+    transform: translateY(-50%)rotate(45deg);
+}
+.about-item4::after {
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #eeeeee;
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%)rotate(45deg);
+}
+.about-item4 {
+    margin-top: 60px;
+}
+.about-item1 h3, .about-item2 h3, .about-item3 h3, .about-item4 h3{
+    font-size: 18px;
+    color: #111;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform:uppercase;
+}
+.about-item1 p, .about-item2 p, .about-item3 p, .about-item4 p {
+    font-size: 14px;
+    color: #353535;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 16px;
+}
+.about-img{
+    position: relative;
+}
+.about-img::after{
+    content: '';
+    width: 365px;
+    height: 365px;
+    border-radius: 50%;
+    border: 1px solid #353535;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.about-item1:hover {
+     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+}
+.about-item2:hover {
+     filter: drop-shadow(5px 0px 5px rgba(0, 0, 0, 0.3));
+}
+.about-item3:hover {
+    filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+.about-item4:hover {
+    filter: drop-shadow(0px -5px 5px rgba(0, 0, 0, 0.3));
+}
+
+/*============= portfolio Part Goes Here ==============*/
+#portfolio {
+    background: url(../images/port-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.portfolio {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.portfolio::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.gal-main {
+    position: relative;
+    z-index: 99;
+}
+#portfolio .headline h2 {
+    color: #fff;
+}
+#portfolio .headline p {
+    color: #fff;
+}
+.img {
+    margin-bottom: 24px;
+}
+
+#portfolio::before {
+    position: absolute;
+    content: '';
+    top: -47px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 99;
+    transform: skewY(-2deg);
+}
+#portfolio::after {
+    position: absolute;
+    content: '';
+    bottom: -47px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 99;
+    transform: skewY(-2deg);
+}
+/*============= service Part Goes Here ==============*/
+#service {
+    padding-top: 100px
+}
+.service-text {
+    background: #f1f1f1;
+    padding: 50px;
+}
+.service-text p {
+    line-height: 24px;
+    
+}
+.item1 {
+    position: relative;
+}
+.item1::after {
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #eeeeee;
+    top: 50%;
+    left: -19px;
+    transform: translateY(-50%)rotate(45deg);
+}
+.item2 {
+    position: relative;
+}
+.item2::after {
+    position: absolute;
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #eeeeee;
+    top: 50%;
+    right: -19px;
+    transform: translateY(-50%)rotate(45deg);
+}
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: #eeeeee;
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    transition:  all linear .3s;
+}
+.slick-slide img {
+    display: inline-block;
+}
+.service-slider-item.slick-center .service-icon {
+    transform: scale(1.3);
+    background: #fec600;
+}
+.service-slide-icon {
+    position: relative;
+    padding-bottom: 30px;
+}
+.service-slide-icon::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/border-shape.png)repeat-y;
+    z-index: -1;
+}
+.service-slide-icon i{
+    width: 37px;
+    height: 37px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+.service-slide-icon i:hover{
+    background-color: #fec600;
+    border-color: #fec600;
+}
+.service-slide-icon .up {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.service-slide-icon .down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#service .slick-slider {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+/*============= feedback Part Goes Here ==============*/
+#feedback {
+    background: url(../images/feedbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    position: relative;
+}
+#feedback::before {
+    position: absolute;
+    content: '';
+    top: -47px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 99;
+    transform: skewY(-2deg);
+}
+#feedback::after {
+    position: absolute;
+    content: '';
+    bottom: -47px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 99;
+    transform: skewY(-2deg);
+}
+.feedback-main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.feedback-main::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.705);
+    top: 0;
+    left: 0;
+}
+.feed-main {
+    position: relative;
+    z-index: 999;
+}
+.feed-img {
+    width: 100px;
+    height: 100px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition:  all linear .3s;
+}
+.feed-img-item {
+    margin:30px 0;
+}
+.feed-img-icon {
+    position: relative;
+}
+.feed-img-icon::after {
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url(../images/border-shape2.png)repeat-y;
+	width: 1px;
+	height: 86%;
+	z-index: -1;
+	content: '';
+}
+
+.feed-img-icon i{
+    width: 37px;
+    height: 37px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+.feed-img-icon i:hover{
+    background-color: #fec600;
+    border-color: #fec600;
+}
+.feed-img-icon .up {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feed-img-icon .down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#feedback .feed-img-slider.slick-slider {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.feed-text-main {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.feed-text-slider {
+    background: #f1f1f1;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    position: relative;
+}
+.feed-text-slider::after {
+	width: 56px;
+	height: 56px;
+	background-color: #f1f1f1;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: -15px;
+	transform: translateY(-50%)rotate(45deg);
+	border-radius: 10px;
+}
+.feed-text-slider::before {
+	background:url(../images/quote.png);
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    z-index: 999;
+    width: 309px;
+    height: 171px;
+    transform: translate(-50%,-50%);
+}
+.feed-text-item {
+    padding-left: 45px;
+    padding-right: 30px;
+}
+.feed-img-item.slick-center .feed-img{
+    background-color: #fec600;
+    transform: scale(1.3);
+}
+/*============= Pricing Part   Here ==============*/
+#pricing{
+    margin-top: 53px;
+}
+.price_item{
+    background: #f1f1f1;
+    position: relative;
+}
+.price_item .price_heading{
+    background: #353535;
+    padding-top: 28px;
+    padding-bottom: 94px;
+    clip-path: polygon(1% 0, 100% 0, 100% 65%, 0 99%);
+    transition: all linear.3s;
+}
+.price_item .price_heading h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+.price_item .price_body{
+    padding-top: 35px;
+}
+.price_item .price_body ul{
+    text-align: center;
+}
+.price_item .price_body ul li{
+    color: #353535;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.price_item .price_btn{
+    background: #353535;
+    padding-top: 44px;
+    padding-bottom: 22px;
+    text-align: center;
+    clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 99%);
+    transition: all linear.3s;
+}
+.price_item .price_btn a{
+    color: #fff;
+    font-size: 18px;
+}
+.price_circle_main {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	left: 50%;
+	top: 18%;
+	transform: translateX(-50%);
+	background: #fff;
+	padding: 3px;
+	border: 1px solid #424242;
+}
+.price_circle_main .price_circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #353535;
+    text-align: center;
+    transition: all linear.3s;
+}
+.price_circle_main .price_circle h5{
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.price_circle_main .price_circle p{
+    color: #fff;
+}
+.price_item:hover .price_heading{
+    background: #fec600;
+}
+.price_item:hover .price_circle_main{
+    border: 1px solid #fec600;
+}
+.price_item:hover .price_circle{
+    background: #fec600;
+}
+.price_item:hover .price_circle h5{
+    color: #353535;
+}
+.price_item:hover .price_btn{
+    background: #fec600;
+}
+/*============= Pricing Part Goes Here ==============*/
+
+
+/*============= Counter Part Goes Here ==============*/
+#counter {
+	margin-top: 50px;
+	background: url(../images/counter_bg.png) top no-repeat;
+	background-size: cover;
+	transform: skewY(-3deg);
+}
+#counter .overlay{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+}
+.counter_main{
+    display: flex;
+    justify-content: space-between;
+}
+.counter_main .counter_item{
+    width: 18%;
+    border: 1px solid #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.counter_main .counter_item h4{
+    color: #fff;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.counter_main .counter_item p{
+    color: #fff;
+    font-size: 14px;
+}
+/*============= Counter Part Goes Here ==============*/
+
+
+/*============= Navbar Part Goes Here ==============*/
+#team {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.team-item {
+    border: 1px solid #dddddd;
+}
+.team-img {
+    background-color: #f1f1f1;
+    padding-top: 10px;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    position: relative;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(254, 199, 0, 0.5);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.team-overlay i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    color: #353535;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+}
+.team-item:hover .team-overlay {
+    opacity: 1;
+    height: 100%;
+}
+.team-info h3 {
+    font-size: 20px;
+    color: #111;
+    font-weight: 500;
+    padding-top: 12px;
+}
+.team-info p {
+    font-size: 16px;
+    color: #444;
+    font-weight: 400;
+}
+.social {
+    padding-bottom: 22px;
+    margin-top: -50px;
+    opacity: 0;
+    transition:  all linear .3s;
+}
+.social i {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #353535;
+    line-height: 35px;
+    text-align: center;
+    color: #353535;
+}
+.team-item:hover .social {
+    opacity: 1;
+    margin-top: 0;
+}
+/*============= Navbar Part Goes Here ==============*/
